@@ -35,7 +35,7 @@ exports.get_secret_phrase3 = async (req,res) =>{
     let result = await SecretPhrase3.findOne({where:{user_id : user.id }})
     if(result)
     {
-      return res.status(200).json({ SecretPhrase3: result});
+      return res.status(200).json({ SecretPhrase3: result.secret_phrase_3});
 
     }
     else
