@@ -8,6 +8,6 @@ const {
 const authMiddleware = require("../middlewares/validations/auth");
 
 Router.post("/secret_phrase_3",authMiddleware,secret_phrase_3,UserController.secret_phrase_3)
-Router.get("/get_secret_phrase3",authMiddleware,UserController.get_secret_phrase3)
+Router.get("/get/secret_phrase",authMiddleware,UserController.get_secret_phrase3)
 
 module.exports = Router;
